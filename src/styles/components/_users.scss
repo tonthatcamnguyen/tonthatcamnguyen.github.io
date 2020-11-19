@@ -1,0 +1,95 @@
+.users {
+    &-container {
+        width: 100%;
+        height: 100%;
+        padding: $spacing-xs $spacing-sm;
+    }
+    &-row {
+        align-items: center;
+        width: 100%;
+        padding: $spacing-xs $spacing-sm;
+        margin: $spacing-xs 0;
+    }
+}
+
+.primary {
+    background-color: $comment-primary-colour;
+}
+
+.secondary {
+    background-color: $comment-secondary-colour;
+}
+
+.user {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: $spacing-xs $spacing-sm;
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: $spacing-xs $spacing-sm;
+    }
+    &-user {
+        font-size: $font-size-lg;
+        width: 100%;
+        justify-content: space-between;
+        align-items: baseline;
+        text-transform: capitalize;
+        padding: $spacing-secondary $spacing-xs;
+        &-icon {
+            background-color: $user-avatar-bg-colour;
+            color: $user-avatar-text-colour;
+            font-size: $font-size-md;
+            padding: $spacing-sm $spacing-base * 2 $spacing-sm;
+            text-align: center;
+            flex-basis: 7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-timestamp {
+        font-size: $font-size-md;
+        font-weight: $roboto-medium;
+        color: $timestamp-text-colour;
+    }
+    &-text {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: $spacing-secondary $spacing-xs;
+        white-space: normal;
+    }
+    &-review {
+        width: 100%;
+        align-items: center;
+        padding: $spacing-secondary $spacing-xs;
+        &-results {
+            flex-basis: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            padding: $spacing-sm $spacing-base $spacing-sm $spacing-base;
+            text-align: center;
+        }
+    }
+}
+
+.approved {
+    color: $approve-button-colour;
+}
+
+.rejected {
+    color: $reject-button-colour;
+}

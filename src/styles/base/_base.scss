@@ -1,0 +1,12 @@
+html,
+body,
+#root {
+  font-family: $roboto;
+  font-size: $font-size-base;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+}

@@ -1,0 +1,17 @@
+.button {
+  border: $spacing-primary solid;
+  border-radius: $spacing-xs;
+  font-size: $font-size-md;
+  color: $white;
+  text-transform: uppercase;
+  padding: $spacing-sm $spacing-lg;
+  margin: 0 $spacing-xs;
+  &-approve {
+    border-color: $approve-button-colour;
+    background-color: $approve-button-colour;
+  }
+  &-reject {
+    border-color: $reject-button-colour;
+    background-color: $reject-button-colour;
+  }
+}
